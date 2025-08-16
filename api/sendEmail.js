@@ -36,7 +36,7 @@ export default async function handler(req, res) {
         from: email,
         to: process.env.EMAIL_USER,
         subject: `Contact Form: ${name}`,
-        text: message,
+        text: `Message from ${name} <${email}>:\n\n${message}`,
         });
         res.status(200).json({ success: "Message sent!" });
     } catch (err) {

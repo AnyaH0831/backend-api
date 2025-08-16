@@ -1,15 +1,16 @@
 {
   "name": "contact-backend",
   "version": "1.0.0",
+  "type": "module",
+  "description": "Vercel serverless function to handle contact form emails",
   "main": "index.js",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "start": "vercel dev"
   },
-  "keywords": [],
-  "author": "",
-  "license": "ISC",
-  "description": "",
+  "engines": {
+    "node": "18.x"
+  },
   "dependencies": {
-    "nodemailer": "^7.0.5"
+    "nodemailer": "^6.9.8"
   }
 }
